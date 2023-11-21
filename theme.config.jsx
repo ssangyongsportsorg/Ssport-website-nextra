@@ -5,7 +5,6 @@ export default {
   project: {
     link: 'https://github.com/shuding/nextra'
   }
-  font: false,
   footer: {
     component: <Footer />,
   },
