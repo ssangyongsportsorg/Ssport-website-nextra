@@ -1,4 +1,4 @@
-import { Footer } from './pages/components/Footer'
+import { Footer } from './pages/components/footer'
 
 export default {
   logo: <span>My Nextra Documentation</span>,
