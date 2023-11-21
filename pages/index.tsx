@@ -5,7 +5,7 @@ import Sport from './components/sport';
 import React from 'react';
 import Head from 'next/head'
 
-const Home = () => {
+export default () => {
   return (
     <>
 <Head>
@@ -21,8 +21,6 @@ const Home = () => {
         <Table />
         <Tabl />
       </div>
-    </>
-  );
+   </>
+  )
 }
-
-export default Home;
