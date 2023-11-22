@@ -7,11 +7,11 @@
       "layout": "raw"
     }
   },
-  "contact": {
-    "title": "Contact ↗",
+ "contact": {
     "type": "page",
+    "title": "contact",
     "display": "hidden",
- "theme": {
+    "theme": {
       "layout": "raw"
  }
 }
