@@ -2,9 +2,8 @@ import Head from 'next/head'
 import styles from './components/Button.module.css';
 import { Label, Select } from 'flowbite-react';
 import { FileInput } from 'flowbite-react';
-
-function c() {
-  return (   
+export default () => {
+  return (
         <div>
    <section>
   <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -115,8 +114,7 @@ function c() {
       </Head>
   
       </div>
+   </>
   )
 }
-
-export default c
 
