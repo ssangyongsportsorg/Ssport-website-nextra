@@ -6,8 +6,9 @@ import Head from 'next/head'
 import { DocSearch } from '@docsearch/react'
 import '@docsearch/css';
 import clsx from "clsx";
-const support = () => {
+export default () => {
   return (
+
        <>
 <Head>
         <title>雙龍體育幫助</title>
@@ -22,8 +23,6 @@ const support = () => {
         <Supportchoice />
              
       </div>
-    </>
-      );
+   </>
+  )
 }
-
-export default support;
