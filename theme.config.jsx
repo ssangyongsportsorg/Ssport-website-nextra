@@ -1,8 +1,12 @@
 import Footer from './pages/components/footer'
-import DocSearch from './components/docsearch'
+
 export default {
-  customSearch: <DocSearch/>,
-  logo: <span>My Nextra Documentation</span>,
+
+  logo: <span><img
+      src="/logo.png"
+      className="mr-3 h-6 sm:h-9"
+      alt="ssport Logo"
+    /></span>,
   project: {
     link: 'https://github.com/shuding/nextra'
   },
