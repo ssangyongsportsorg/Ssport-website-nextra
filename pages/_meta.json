@@ -7,6 +7,15 @@
       "layout": "raw"
     }
   },
+  {
+  "support": {
+    "type": "page",
+    "title": "Nextra",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
  "contact": {
     "type": "page",
     "title": "contact",
