@@ -1,4 +1,5 @@
 import Footer from './pages/components/footer'
+import Login from './pages/components/login'
 
 export default {
 
@@ -8,7 +9,17 @@ export default {
       alt="ssport Logo"
     /></span>,
   project: {
-    link: 'https://github.com/shuding/nextra'
+    link: 'https://github.com/ssangyongsportsorg/Ssport-website'
+  },
+   search: {
+    placeholder: "搜尋....",
+  },
+   navbar: {
+    extraContent: (
+      <div className="flex flex-row gap-3">
+          <Login />
+      </div>
+    ),
   },
   footer: {
     component: <Footer />,
