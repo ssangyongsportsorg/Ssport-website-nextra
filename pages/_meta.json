@@ -12,7 +12,7 @@
     "title": "隱私政策",
     "display": "hidden",
     "theme": {
-      "layout": "raw"
+         "typesetting": "article"
     }
   },
   
