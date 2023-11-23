@@ -7,12 +7,7 @@
       "layout": "raw"
     }
   },
-    "blog": {
-    "title": "部落格",
-    "type": "page"
-         }
-  },
-
+  
   "p": {
     "type": "page",
     "title": "隱私政策",
