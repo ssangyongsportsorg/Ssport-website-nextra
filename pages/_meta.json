@@ -12,12 +12,12 @@
     "title": "隱私政策",
     "display": "hidden",
     "theme": {
-         "typesetting": "article"
+      "typesetting": "article"
     }
   },
   "blog": {
     "type": "page",
-    "title": "Blog"
+    "title": "Blog",
     "display": "hidden",
     "theme": {
       "layout": "raw"
@@ -31,12 +31,12 @@
       "layout": "raw"
     }
   },
- "contact": {
+  "contact": {
     "type": "page",
     "title": "contact",
     "display": "hidden",
     "theme": {
       "layout": "raw"
- }
-}
+    }
+  }
 }
