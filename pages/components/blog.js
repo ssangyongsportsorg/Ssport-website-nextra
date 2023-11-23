@@ -7,7 +7,7 @@ export default function BlogIndex({ more = "Read more" }) {
   const { locale, defaultLocale } = useRouter();
   return filterRouteLocale(getPagesUnderRoute("/blog"), locale, defaultLocale).map((page) => {
     return (
-      <div key={page.route} className="mb-10">
+      <>
     <div className="flex justify-between px-4 mx-auto max-w-8xl">
   <div className="hidden mb-6 xl:block lg:w-80">
     <div className="sticky top-36">
@@ -70,11 +70,12 @@ export default function BlogIndex({ more = "Read more" }) {
               />
             </svg>
           </Link>
-        </div>
+          </div>
       </article>
     </div>
   </div>
 </div>
+                  </>
        
     );
   });
