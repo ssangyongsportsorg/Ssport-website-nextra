@@ -1,14 +1,24 @@
-import { getPagesUnderRoute } from "nextra/context";
-import filterRouteLocale from "nextra/filter-route-locale"
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Image from 'next/image'
-export default function BlogIndex({ more = "Read more" }) {
-  const { locale, defaultLocale } = useRouter();
-  return filterRouteLocale(getPagesUnderRoute("/blog"), locale, defaultLocale).map((page) => {
-    return (
-      <>
-    <div className="flex justify-between px-4 mx-auto max-w-8xl">
+import fs from 'fs';
+import matter from 'gray-matter';
+import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head'
+
+
+
+// The Blog Page Content
+export default function Blog({posts}){
+    return 
+        {posts.map(post => {
+            //extract slug and frontmatter
+            const {slug, frontmatter} = post
+            //extract frontmatter properties
+            const {title, seo, author, category, date, bannerImage, tags, img, info} = frontmatter
+
+            //JSX for individual blog listing
+            return <article key={title}>
+            
+         <div className="flex justify-between px-4 mx-auto max-w-8xl">
   <div className="hidden mb-6 xl:block lg:w-80">
     <div className="sticky top-36">
     </div>
@@ -26,12 +36,12 @@ export default function BlogIndex({ more = "Read more" }) {
             </Link>
           </div>
           <span className="text-sm">
-       {page.frontMatter.date}
+            {date}
           </span>
         </div>
     <h2 className={`mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white `}>
-    <Link href={page.route}>
-            {page.meta?.title || page.frontMatter?.title || page.name}
+    <Link href={`/blog/${slug}`}>
+            {title}
           </Link>
         </h2>
         <p className="mb-5 text-gray-500 dark:text-gray-400">
@@ -54,7 +64,7 @@ export default function BlogIndex({ more = "Read more" }) {
           </a>
           <Link
             className="inline-flex items-center font-medium text-blue-600 hover:underline dark:text-blue-500"
-              href={page.route}
+            href={`/blog/${slug}`}
           >
                     閱讀文章
             <svg
@@ -70,13 +80,39 @@ export default function BlogIndex({ more = "Read more" }) {
               />
             </svg>
           </Link>
-          </div>
+        </div>
       </article>
     </div>
   </div>
 </div>
-                  </>
-       
-    );
-  });
+
+</article>
+
+        })}
+</main>
 }
+
+
+//Generating the Static Props for the Blog Page
+export async function getStaticProps() {
+  const files = fs.readdirSync('posts');
+  const posts = files.map((fileName) => {
+    const slug = fileName.replace('.md', '');
+    const readFile = fs.readFileSync(`posts/${fileName}`, 'utf-8');
+    const { data: frontmatter } = matter(readFile);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
+  // Sort posts in descending order based on the date property
+  posts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+
+  return {
+    props: {
+      posts,
+    },
+  };
+              }
