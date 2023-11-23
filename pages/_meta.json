@@ -7,6 +7,23 @@
       "layout": "raw"
     }
   },
+  "p": {
+    "type": "page",
+    "title": "隱私政策",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  {
+  "index": {
+    "type": "page",
+    "title": "Nextra",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
   
   "support": {
     "type": "page",
