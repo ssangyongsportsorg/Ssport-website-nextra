@@ -23,7 +23,12 @@ return (
 }
 return (
 <>
-<Button> 
+<button
+        className={clsx(
+          "break-keep rounded-md px-5 py-1 font-bold",
+          "bg-black text-white dark:bg-white dark:text-black"
+        )}
+      >
   <Link
                  href={`/api/auth/signin`} 
                  onClick={(e) => { 
@@ -32,7 +37,7 @@ return (
                  }} 
                > 
                  登入
-               </Link></Button>
+               </Link></button>
 </>
 )
 }
