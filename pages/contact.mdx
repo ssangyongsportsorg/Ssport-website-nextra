@@ -1,6 +1,5 @@
 'use client';
 
-import { Button } from 'flowbite-react';
 import Head from 'next/head' 
 import styles from './components/Button.module.css';
 import { Label, Select } from 'flowbite-react';
@@ -100,8 +99,8 @@ export default () => {
   name="_cc"
   defaultValue="support@ssangyongsports.eu.org"
 />
-<Button type="submit" gradientDuoTone="purpleToBlue"
->發送訊息</Button>
+<button type="submit" className="bg-white text-black"
+>發送訊息</button>
     
     </form>
   </div>
