@@ -16,7 +16,11 @@
          "typesetting": "article"
     }
   },
-  
+  "blog": {
+    "type": "page",
+    "title": "隱私政策",
+    }
+  },
   "support": {
     "type": "page",
     "title": "support",
