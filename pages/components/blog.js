@@ -2,7 +2,7 @@ import { getPagesUnderRoute } from "nextra/context";
 import filterRouteLocale from "nextra/filter-route-locale"
 import Link from "next/link";
 import { useRouter } from "next/router";
-
+import Image from 'next/image'
 export default function BlogIndex({ more = "Read more" }) {
   const { locale, defaultLocale } = useRouter();
   return filterRouteLocale(getPagesUnderRoute("/blog"), locale, defaultLocale).map((page) => {
