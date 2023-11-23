@@ -7,7 +7,6 @@
       "layout": "raw"
     }
   },
-  
   "p": {
     "type": "page",
     "title": "隱私政策",
@@ -18,8 +17,7 @@
   },
   "blog": {
     "type": "page",
-    "title": "隱私政策",
-    }
+    "title": "Blog"
   },
   "support": {
     "type": "page",
