@@ -14,12 +14,6 @@ export default {
    search: {
     placeholder: "搜尋....",
   },
-   gitTimestamp: ({ timestamp }) => {
-    return (
-      <p className="text-lg">最後更新於 {timestamp.toLocaleDateString()}</p>
-    );
-  },
-};
    navbar: {
     extraContent: (
       <div className="flex flex-row gap-3">
