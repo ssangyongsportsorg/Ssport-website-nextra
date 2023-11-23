@@ -1,9 +1,14 @@
-import Blog from './components/blog'
+---
+title: Blog
+description: 雙龍體育的部落格
+---
+import styles from './Button.module.css';
+import { getPagesUnderRoute } from 'nextra/context';
+import Link from 'next/link';
 
-export default () => {
+export function head() {
   return (
-    <>
- <section>
+     <section>
   <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
     <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
       <h2 className={`mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white `}>
@@ -17,8 +22,36 @@ export default () => {
     </div>
   </div>
 </section>
-
-<Blog/>
- </>
-  )
+  );
 }
+
+export function BlogIndex() {
+  return getPagesUnderRoute('/blog').map((page) => {
+    return (
+      <div key={page.route} className="mb-10">
+        <Link
+          href={page.route}
+          style={{ color: 'inherit', textDecoration: 'none' }}
+          className="block font-semibold mt-8 text-2xl"
+          tabIndex="0"
+        >
+          {page.meta?.title || page.frontMatter?.title || page.name}
+        </Link>
+        <p className="opacity-80" style={{ marginTop: '.5rem' }}>
+          {page.frontMatter?.description}{' '}
+          <span className="inline-block nx-text-primary-600 nx-underline nx-decoration-from-font [text-underline-position:from-font] font-bold">
+            <Link href={page.route} tabIndex="-1">
+              {'Read more →'}
+            </Link>
+          </span>
+        </p>
+        {page.frontMatter?.date ? (
+          <p className="opacity-50 text-sm mt-2">{page.frontMatter.date}</p>
+        ) : null}
+      </div>
+    );
+  });
+}
+
+<head />
+<BlogIndex />
