@@ -53,14 +53,14 @@ export default function BlogIndex({ pages, recommendations }: Props) {
         <div className="h-stack justify-center max-sm:flex-col max-sm:items-stretch">
           <button
             href="/blog/tags"
-            icon={<BsEyeFill className="text-xl" />}
+            
             variant="primary"
           >
             查看所有標籤
           </button>
           <button
             href="https://github.com/yeecord/website"
-            icon={<RiGithubFill className="text-xl" />}
+            
             target="_blank"
           >
             加入我們
