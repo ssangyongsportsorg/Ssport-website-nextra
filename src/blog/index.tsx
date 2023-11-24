@@ -1,14 +1,12 @@
 import React from "react";
-import { getTitle } from "@utils/mdx";
+import { getTitle } from "@/src/utils/mdx";
 import { BlogItem, LargeBlogItem } from "./components/BlogItem";
 import clsx from "clsx";
-import { LinkButton } from "@components/mdx";
-import { BsCheckCircleFill, BsEyeFill } from "react-icons/bs";
 import { blogRecommendations } from "../../config";
-import { RiGithubFill } from "react-icons/ri";
+
 import { BlogRecommend } from "./components/BlogRecommend";
 import { useState } from "react";
-import { FiFilter } from "react-icons/fi";
+
 import { GetStaticProps } from "next";
 import { BlogPage, BlogPageSchema } from "../schema/blog";
 import { getBlogPageMap } from "./utils/get-page-map";
@@ -53,20 +51,20 @@ export default function BlogIndex({ pages, recommendations }: Props) {
           我們的部落格
         </h1>
         <div className="h-stack justify-center max-sm:flex-col max-sm:items-stretch">
-          <LinkButton
+          <button
             href="/blog/tags"
             icon={<BsEyeFill className="text-xl" />}
             variant="primary"
           >
             查看所有標籤
-          </LinkButton>
-          <LinkButton
+          </button>
+          <button
             href="https://github.com/yeecord/website"
             icon={<RiGithubFill className="text-xl" />}
             target="_blank"
           >
             加入我們
-          </LinkButton>
+          </button>
         </div>
       </div>
 
@@ -82,7 +80,7 @@ export default function BlogIndex({ pages, recommendations }: Props) {
             className="flex-1 rounded-lg bg-slate-100 px-4 py-2 dark:bg-zinc-800"
             placeholder="搜索文章"
           />
-          <FiFilter className="text-xl" />
+          
         </div>
       </div>
 
@@ -110,7 +108,7 @@ function Recommendations({ items }: { items: BlogPage[] }) {
       {items[0] != null && <LargeBlogItem page={items[0]} />}
       <div className="max-md:-ml-3">
         <h2 className="ml-3 mb-3 inline-flex gap-2 text-3xl font-bold">
-          精選文章 <BsCheckCircleFill className="text-green-400" />
+          精選文章 
         </h2>
         <div className="flex flex-col gap-3">
           {items.map((page, i) => {
