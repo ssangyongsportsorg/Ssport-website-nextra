@@ -54,14 +54,13 @@ export default function BlogIndex({ pages, recommendations }: Props) {
           <button
             href="/blog/tags"
             
-            variant="primary"
+    
           >
             查看所有標籤
           </button>
           <button
             href="https://github.com/yeecord/website"
             
-            target="_blank"
           >
             加入我們
           </button>
