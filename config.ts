@@ -1,3 +1,4 @@
+import type { AuthorData } from "@schema/blog";
 export const blogAuthors: Record<string, AuthorData> = {
   kane: {
     name: "凱恩Kane",
