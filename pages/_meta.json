@@ -17,7 +17,7 @@
     "type": "page",
     "title": "Nextra",
     "theme": {
-      "layout": "raw
+      "layout": "raw"
           }
   },
   "support": {
