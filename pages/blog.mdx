@@ -29,6 +29,10 @@ export function BlogIndex() {
   return getPagesUnderRoute('/blog').map((page) => {
     return (
 <div className="flex justify-between px-4 mx-auto max-w-8xl">
+  <div className="hidden mb-6 xl:block lg:w-80">
+    <div className="sticky top-36">
+    </div>
+  </div>
       <div key={page.route} className="mb-10">
         <Link
           href={page.route}
