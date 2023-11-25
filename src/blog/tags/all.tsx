@@ -1,4 +1,4 @@
-import { LinkButton } from "@components/mdx";
+
 import clsx from "clsx";
 import { GetStaticProps } from "next";
 import Link from "next/link";
@@ -27,14 +27,7 @@ export default function AllTags({ tags }: Props) {
     <div className="my-16 mx-auto flex max-w-[1500px] flex-col gap-3 p-6">
       <div className="mb-3 flex flex-col gap-3">
         <h1 className="text-center text-5xl font-bold md:text-6xl">所有標籤</h1>
-        <LinkButton
-          href="/blog"
-          link={{ className: "mx-auto" }}
-          variant="primary"
-          icon={<BsEyeFill />}
-        >
-          查看文章
-        </LinkButton>
+        
       </div>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
