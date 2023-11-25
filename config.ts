@@ -1,4 +1,4 @@
-import type { AuthorData } from "@/src/schema/blog";
+import type { AuthorData } from "@schema/blog";
 export const blogRecommendations = [
   
   "blog",
