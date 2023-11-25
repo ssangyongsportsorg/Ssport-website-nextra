@@ -17,7 +17,11 @@
   },
   "blog": {
     "type": "page",
-    "title": "Blog"
+    "title": "Nextra",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw
+          }
   },
   "support": {
     "type": "page",
