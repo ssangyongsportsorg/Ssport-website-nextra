@@ -15,8 +15,9 @@
     "jsx": "preserve",
     "incremental": true,
   
+
       "paths": {
-  
+      "@schema/*": ["./schema/*"],
       "@ads/*": ["./lib/ads/*"] 
     }
   },
