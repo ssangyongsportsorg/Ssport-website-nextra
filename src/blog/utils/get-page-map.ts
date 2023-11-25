@@ -1,4 +1,4 @@
-import { NEXTRA_INTERNAL } from "@utils/mdx";
+import { NEXTRA_INTERNAL } from "../../utils/mdx";
 import { Folder, MdxFile, PageMapItem, PageOpts } from "nextra";
 
 // copied from NextraInternalGlobal
