@@ -1,36 +1,32 @@
----
-title: Blog
-description: 雙龍體育的部落格
----
 import styles from './components/Button.module.css';
 import { getPagesUnderRoute } from 'nextra/context';
-import Link from 'next/link'; 
+import Link from 'next/link';
 
-export function Blog() { 
+export function Blog() {
   return (
-     <section>
-  <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-    <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-      <h2 className={`mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white `}>
-        雙龍體育
-           部落格
-      </h2>
-      <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-   任何關於雙龍體育的任何關於雙龍體育的消息和公告
-      </p>
-     
-    </div>
-  </div>
-</section>
+    <section>
+      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+          <h2
+            className={`mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white `}
+          >
+            雙龍體育 部落格
+          </h2>
+          <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+            任何關於雙龍體育的任何關於雙龍體育的消息和公告
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
 
 export function BlogIndex() {
   return getPagesUnderRoute('/blog').map((page) => {
     return (
-<div key={page.route}>
-            
-         <div className="flex justify-between px-4 mx-auto max-w-8xl">
+      <div key={page.route}>
+        <div className="flex justify-between px-4 mx-auto max-w-8xl">
+  <div className="flex justify-between px-4 mx-auto max-w-8xl">
   <div className="hidden mb-6 xl:block lg:w-80">
     <div className="sticky top-36">
     </div>
@@ -106,15 +102,19 @@ export function BlogIndex() {
       </article>
     </div>
   </div>
-</div>
-
-</div>
+</div>        </div>
+      </div>
     );
   });
 }
-<section>
 
-<Blog />
-<BlogIndex />
-</section>
+export default function BlogPage() {
+  return (
+    <div>
+      <Blog />
+      <BlogIndex />
+    </div>
+  );
+}
 
+// Usage: Render the BlogPage component
