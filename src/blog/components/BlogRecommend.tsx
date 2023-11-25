@@ -1,5 +1,5 @@
 import React from "react";
-import { getTitle } from "@/src/utils/mdx";
+import { getTitle } from "../../utils/mdx";
 import clsx from "clsx";
 import Link from "next/link";
 import { BlogPage } from "../../schema/blog";
