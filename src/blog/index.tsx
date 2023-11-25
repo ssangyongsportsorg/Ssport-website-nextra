@@ -2,7 +2,7 @@ import React from "react";
 import { getTitle } from "../utils/mdx";
 import { BlogItem, LargeBlogItem } from "./components/BlogItem";
 import clsx from "clsx";
-import { blogRecommendations } from "@/config";
+import { blogRecommendations } from "../../config";
 
 import { BlogRecommend } from "./components/BlogRecommend";
 import { useState } from "react";
