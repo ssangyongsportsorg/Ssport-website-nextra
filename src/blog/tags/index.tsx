@@ -3,7 +3,6 @@ import { getStaticTags, getTags } from "../utils/tags";
 import { getBlogPageMap } from "../utils/get-page-map";
 import { PageMapItem } from "nextra";
 import { BlogItem } from "../components/BlogItem";
-import { LinkButton } from "@components/mdx";
 import { BlogPage, BlogPageSchema } from "../../schema/blog";
 
 //Important: upper case urls are invalid
@@ -18,9 +17,7 @@ export default function TagPage({ pages, tag }: Props) {
       <div className="mb-5 flex flex-col gap-5">
         <h1 className="text-center text-3xl font-bold md:text-4xl">{`帶有「${tag}」標籤的文章`}</h1>
 
-        <LinkButton href="/blog/tags" link={{ className: "mx-auto" }}>
-          所有標籤
-        </LinkButton>
+        
       </div>
       <div className="grid grid-cols-1 gap-5 p-5 md:grid-cols-2 lg:grid-cols-3">
         {pages.map((page) => (
