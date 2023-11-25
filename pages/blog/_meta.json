@@ -7,5 +7,7 @@
       "pagination": false,
       "sidebar": false
     }
-  }
+},
+    "blog": "測試",
+  "test": "測試一"
 }
