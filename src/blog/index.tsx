@@ -51,19 +51,7 @@ export default function BlogIndex({ pages, recommendations }: Props) {
           我們的部落格
         </h1>
         <div className="h-stack justify-center max-sm:flex-col max-sm:items-stretch">
-          <button
-            href="/blog/tags"
-            
-    
-          >
-            查看所有標籤
-          </button>
-          <button
-            href="https://github.com/yeecord/website"
-            
-          >
-            加入我們
-          </button>
+        
         </div>
       </div>
 
