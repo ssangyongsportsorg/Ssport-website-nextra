@@ -1,5 +1,5 @@
 import React from "react";
-import { getTitle } from "@/src/utils/mdx";
+import { getTitle } from "../utils/mdx";
 import { BlogItem, LargeBlogItem } from "./components/BlogItem";
 import clsx from "clsx";
 import { blogRecommendations } from "@/config";
