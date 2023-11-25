@@ -17,7 +17,7 @@
   
 
       "paths": {
-      "@schema/*": ["./schema/*"],
+          "@schema/*": ["./src/schema/*"],
       "@ads/*": ["./lib/ads/*"] 
     }
   },
