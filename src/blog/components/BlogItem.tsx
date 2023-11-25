@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { getTitle } from "../../utils/mdx";
-import { getTagHref } from "@/../utils/tags";
+import { getTagHref } from "../utils/tags";
 import clsx from "clsx";
 import { BlogPage } from "../../schema/blog";
 
