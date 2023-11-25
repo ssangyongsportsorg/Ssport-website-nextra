@@ -101,6 +101,7 @@ export default function Blog({ posts }) {
 }
 
 // Generating the Static Props for the Blog Page
+// Generating the Static Props for the Blog Page
 export async function getStaticProps() {
   const files = fs.readdirSync('posts');
   const posts = files.map((fileName) => {
