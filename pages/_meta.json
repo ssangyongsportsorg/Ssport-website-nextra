@@ -15,12 +15,10 @@
       "typesetting": "article"
     }
   },
-  "blog": {
-    "type": "page",
+    "blog": {
     "title": "Blog",
-    "display": "hidden",
     "theme": {
-      "layout": "raw"
+      "typesetting": "article"
     }
   },
   "support": {
