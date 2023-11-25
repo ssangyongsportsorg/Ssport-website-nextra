@@ -2,10 +2,10 @@
   "*": {
     "display": "hidden",
     "theme": {
-      "toc": false,
-      "sidebar": false,
+      "footer": true,
+      "toc": true,
       "pagination": false,
-      "typesetting": "article"
+      "sidebar": false
     }
-  },
-  "blog": "第一個部落格'",
+  }
+}
