@@ -23,7 +23,7 @@ export function Blog() {
 }
 
 export function BlogIndex() {
-  return getPagesUnderRoute('/blog').map((page) => {
+  return getPagesUnderRoute('/blog').map((page) => { 
     return (
      <div key={page.route}>
   <div className="flex justify-between px-4 mx-auto max-w-8xl">
