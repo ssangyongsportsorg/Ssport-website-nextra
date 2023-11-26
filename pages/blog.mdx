@@ -3,6 +3,8 @@ import { getPagesUnderRoute } from 'nextra/context';
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head'
+import filterRouteLocale from 'nextra/filter-route-locale'
+
 export function Blog() {
   return (
     <section>
@@ -23,8 +25,12 @@ export function Blog() {
 }
 
 export function BlogIndex() {
-  return getPagesUnderRoute('/blog').map((page) => { 
-    return (
+  const { locale, defaultLocale } = useRouter()
+  return filterRouteLocale(
+    getPagesUnderRoute('/blog'),
+    locale,
+    defaultLocale
+  ).map(page => (
      <div key={page.route}>
   <div className="flex justify-between px-4 mx-auto max-w-8xl">
       <div className="hidden mb-6 xl:block lg:w-80">
