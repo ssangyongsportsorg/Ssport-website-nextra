@@ -6,12 +6,11 @@
       "layout": "raw"
     }
   },
-   "blog": {
+  "blog": {
     "title": "部落格",
     "type": "page",
     "href": "https://ssangyongsports.eu.org/blog",
     "newWindow": false
-       }
   },
   "p": {
     "type": "page",
@@ -19,13 +18,6 @@
     "theme": {
       "typesetting": "article"
     }
-  },
-  "blog": {
-    "type": "page",
-    "title": "Nextra",
-    "theme": {
-      "layout": "raw"
-          }
   },
   "support": {
     "type": "page",
