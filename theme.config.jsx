@@ -15,6 +15,38 @@ export default {
    search: {
     placeholder: "搜尋....",
   },
+   useNextSeoProps() {
+    const { asPath, route } = useRouter();
+    const { frontMatter, title } = useConfig();
+
+    const image = frontMatter.image != null && {
+      alt: title,
+      url: frontMatter.image,
+    };
+
+    const description =
+      frontMatter.description ??
+      "雙龍體育網站- 專業體育賽事！ 提供最新的雙龍體育資訊、TV、運動比賽報導，讓您輕鬆了解雙龍體育。歡迎加入雙龍運動論壇，一起與大家溝通！";
+
+    return {
+      canonical: `https://yeecord.com${asPath}`,
+      titleTemplate: route === "/" ? "%s" : "%s – 雙龍體育",
+      twitter: {
+        cardType: "summary_large_image",
+      },
+      description: description,
+      openGraph: {
+        description: description,
+        type: "website",
+        images: [
+          image || {
+            url: "/seo.png",
+            alt: "雙龍體育",
+          },
+        ],
+      },
+    };
+  },
    navbar: {
     extraContent: (
       <div className="flex flex-row gap-3">
