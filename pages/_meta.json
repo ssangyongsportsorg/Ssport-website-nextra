@@ -9,8 +9,15 @@
   "blog-link": {
     "title": "部落格",
     "type": "page",
-    "href": "https://ssangyongsports.eu.org/blog",
+    "href": "/blog",
     "newWindow": false
+  },
+  "blog": {
+    "type": "page",
+    "title": "部落格",
+    "theme": {
+      "typesetting": "article"
+    }
   },
   "p": {
     "type": "page",
