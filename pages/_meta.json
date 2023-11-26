@@ -1,7 +1,7 @@
 {
   "index": {
     "type": "page",
-    "title": "Nextra",
+    "title": "首頁",
     "theme": {
       "layout": "raw"
     }
@@ -15,6 +15,7 @@
   "blog": {
     "type": "page",
     "title": "部落格",
+    "display": "hidden",
     "theme": {
       "typesetting": "article"
     }
@@ -22,13 +23,23 @@
   "p": {
     "type": "page",
     "title": "隱私政策",
+    "display": "hidden",
     "theme": {
       "typesetting": "article"
     }
   },
   "support": {
     "type": "page",
-    "title": "support",
+    "title": "支援",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "t": {
+    "type": "page",
+    "title": "服務條款",
+    "display": "hidden",
     "theme": {
       "layout": "raw"
     }
@@ -36,8 +47,37 @@
   "contact": {
     "type": "page",
     "title": "contact",
+    "display": "hidden",
     "theme": {
       "layout": "raw"
+    }
+  },
+  "help": {
+    "title": "支援",
+    "type": "menu",
+    "items": {
+      "help-link": {
+        "title": "幫助中心",
+        "href": "/support"
+      },
+      "contact-link": {
+        "title": "聯繫",
+        "href": "/contact"
+      }
+    }
+  },
+  "pt": {
+    "title": "條款",
+    "type": "menu",
+    "items": {
+      "p-link": {
+        "title": "隱私政策",
+        "href": "/p"
+      },
+      "t-link": {
+        "title": "服務條款",
+        "href": "/t"
+      }
     }
   }
 }
