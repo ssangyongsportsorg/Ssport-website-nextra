@@ -37,14 +37,7 @@ export default {
         <meta name="theme-color" content="#fff" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Language" content="zh-tw" />
-        <meta
-          name="description"
-          content="{description}"
-        />
-        <meta
-          name="og:description"
-          content="{description}"
-        />
+      
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={socialCard} />
         <meta name="twitter:site:domain" content="nextra.site" />
