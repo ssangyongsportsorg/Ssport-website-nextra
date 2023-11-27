@@ -6,6 +6,20 @@
       "layout": "raw"
     }
   },
+   "sport": {
+    "title": "體育",
+    "type": "menu",
+    "items": {
+      "slb-link": {
+        "title": "雙龍職棒",
+        "href": "https://slb.ssangyongsports.eu.org/"
+      },
+      "sba-link": {
+        "title": "雙龍職籃",
+        "href": "https://sba.ssangyongsports.org/"
+      }
+    }
+  },
   "blog-link": {
     "title": "部落格",
     "type": "page",
@@ -52,7 +66,7 @@
       "layout": "raw"
     }
   },
-  "help": {
+  "org": {
     "title": "支援",
     "type": "menu",
     "items": {
@@ -63,6 +77,24 @@
       "contact-link": {
         "title": "聯繫",
         "href": "/contact"
+      }
+    }
+  },
+    "help": {
+    "title": "組織",
+    "type": "menu",
+    "items": {
+      "blog-link": {
+        "title": "部落格",
+        "href": "/blog"
+      },
+       "blog-link": {
+        "title": "雙龍體育TV",
+        "href": "/tv"
+      },
+      "tv-link": {
+        "title": "狀態",
+        "href": "https://status.ssangyongsports.eu.org/"
       }
     }
   },
