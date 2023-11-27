@@ -33,13 +33,6 @@ export default {
     return {
       canonical: `https://yeecord.com${asPath}`,
       titleTemplate: route === "/" ? "%s" : "%s – 雙龍體育",
-      twitter: {
-        cardType: "summary_large_image",
-      },
-      description: description,
-      openGraph: {
-        description: description,
-        type: "website",
         images: [
           image || {
             url: "/seo.png",
