@@ -23,6 +23,7 @@ export default {
     }
   },
   head: function useHead() {
+    const { description } = useConfig()
     const { title } = useConfig()
     const { route } = useRouter()
     const socialCard =
@@ -38,11 +39,11 @@ export default {
         <meta httpEquiv="Content-Language" content="zh-tw" />
         <meta
           name="description"
-          content="雙龍體育網站- 專業體育賽事！ 提供最新的雙龍體育資訊、TV、運動比賽報導，讓您輕鬆了解雙龍體育。歡迎加入雙龍運動論壇，一起與大家溝通！"
+          content="{description}"
         />
         <meta
           name="og:description"
-          content="雙龍體育網站- 專業體育賽事！ 提供最新的雙龍體育資訊、TV、運動比賽報導，讓您輕鬆了解雙龍體育。歡迎加入雙龍運動論壇，一起與大家溝通！"
+          content="{description}"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={socialCard} />
