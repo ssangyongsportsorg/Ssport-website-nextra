@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { AuthorDetails } from "../content/team";
+import type { AuthorDetails } from "@/content/team";
 
 export function Avatar({ name, picture, xUsername }: AuthorDetails) {
   return (
