@@ -7,14 +7,10 @@ export function Authors({ authors }: { authors: Author[] }) {
   return (
     <div className="w-full border-b border-gray-400 authors border-opacity-20">
       <div
-        className={cn(
-          "flex flex-wrap justify-center py-8 mx-auto gap-7",
-          authors.length > 4 && "max-w-3xl"
-        )}
-      >
+        className= "flex flex-wrap justify-center py-8 mx-auto gap-7">
+  
         {validAuthors.map((username) => (
           <Avatar key={username} {...TURBO_TEAM[username]} />
-        ))}
       </div>
     </div>
   );
