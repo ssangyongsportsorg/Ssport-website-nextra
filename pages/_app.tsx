@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from './components/head'
 import Footer from './components/footer'
@@ -13,7 +13,8 @@ export default function App({
   if (Component.name === 'support') {
     return (
       <div>
-         <Component {...pageProps} />
+        <div className="bg-gradient h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
+        <Component {...pageProps} />
       </div>
     );
   }
@@ -22,12 +23,13 @@ export default function App({
   return (
     <div>
       
-         <SessionProvider session={session}>
-        
+        <div className="bg-gradient h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
+        <SessionProvider session={session}>
+          <Head />
           <Component {...pageProps} />
-    
+          <Footer />
         </SessionProvider>
     
     </div>
   );
-        }
+}
